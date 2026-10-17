@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AAVEG Inductions 2026 — NIT Trichy</title>
+  <meta name="description" content="AAVEG is NIT Trichy's inter-hostel fest. Explore the four teams you can join during inductions 2026: Operations, Content, Design and Photography.">
+  <meta name="theme-color" content="#F2EFE7">
+  <!-- Marks the page as JS-enabled before it paints, and lets #teams (used by BACK buttons) skip the intro. -->
+  <script>
+    document.documentElement.classList.add("js");
+    if (location.hash === "#teams") document.documentElement.classList.add("start-teams");
+  </script>
+  <link rel="preload" href="fonts/Anton-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#teams-heading">Skip to the teams</a>
+
+  <!-- ======================================================================
+       SCREEN 1: INTRO
+       To edit: change the text, or swap the <img src> files in images/intro/.
+       Each .slide is one carousel photo. Copy/paste a whole <figure> to add one.
+       ====================================================================== -->
+  <section id="intro" class="intro" aria-label="Introduction to AAVEG">
+    <p class="intro__meta-l label">NIT TRICHY / STUDENT CULTURE</p>
+    <p class="intro__meta-r label">INDUCTIONS / 2026</p>
+
+    <div class="intro__title">
+      <h1 class="display" data-fit>AAVEG</h1>
+      <span class="intro__issue label" aria-hidden="true">ISSUE Nº 01 — THE ARCHIVE</span>
+    </div>
+
+    <p class="intro__para">AAVEG is NIT Trichy's inter-hostel fest. A meeting point for hostels, ideas, competition, and the people who make it all happen. This is where the campus comes together, on stage and far behind it.</p>
+
+    <div class="intro__media">
+      <div class="carousel" data-carousel data-autoplay="5000" aria-label="AAVEG photo carousel">
+        <div class="carousel__viewport">
+          <figure class="slide">
+            <div class="photo"><img src="images/intro/01-the-crowd.jpg" alt="A crowd of students standing together in a hall" loading="eager"></div>
+            <figcaption><b>01</b>THE CROWD</figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="photo"><img src="images/intro/02-behind-the-scenes.jpg" alt="A close-up group selfie of smiling team members" loading="lazy"></div>
+            <figcaption><b>02</b>BEHIND THE SCENES</figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="photo"><img src="images/intro/03-the-night.jpg" alt="A dark crowd lit in red and pink, many wearing red lanyards" loading="lazy"></div>
+            <figcaption><b>03</b>THE NIGHT</figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="photo"><img src="images/intro/04-everything-in-between.jpg" alt="Six portraits in a row, each lit in a different colour" loading="lazy"></div>
+            <figcaption><b>04</b>EVERYTHING IN BETWEEN</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro__cta">
+      <button type="button" id="continue-btn" class="intro__continue label">TAP ANYWHERE TO CONTINUE <span class="arrow" aria-hidden="true">↓</span></button>
+      <span class="label label--grey" aria-hidden="true">AAVEG ARCHIVE</span>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SCREEN 2: TEAM SELECTION
+       To edit a team: change the name, the description paragraph, the image
+       src, or the href (the team page it opens).
+       ====================================================================== -->
+  <main id="teams" class="teams" aria-label="Team selection">
+    <div class="topbar label">
+      <span>AAVEG / INDUCTIONS</span>
+      <button type="button" id="to-intro" class="btn-back label">← INTRO</button>
+    </div>
+
+    <header class="teams__head">
+      <h1 id="teams-heading" class="display" data-fit>FIND YOUR <span>PLACE.</span></h1>
+      <p class="label">FOUR TEAMS. DIFFERENT WAYS TO BE PART OF AAVEG.</p>
+    </header>
+
+    <div class="team-grid">
+      <a class="team-card reveal" href="operations.html" aria-label="Operations — read more">
+        <div class="photo"><img src="images/teams/operations/operations-team.jpg" alt="The Operations team gathered on a floodlit sports field at night" style="object-position:50% 55%" loading="lazy"></div>
+        <span class="team-card__no label">01 — OPERATIONS</span>
+        <div class="team-card__panel">
+          <h2 class="team-card__name display">OPERATIONS</h2>
+          <p class="team-card__desc">The people behind the moving parts. Planning, coordinating, and making sure the whole thing comes together.</p>
+          <span class="team-card__more label">READ MORE <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+
+      <a class="team-card reveal" style="--d:.08s" href="content.html" aria-label="Content — read more">
+        <div class="photo"><img src="images/teams/content/card-content-stage-hosts.jpg" alt="Two hosts on stage with microphones in front of the AAVEG backdrop" loading="lazy"></div>
+        <span class="team-card__no label">02 — CONTENT</span>
+        <div class="team-card__panel">
+          <h2 class="team-card__name display">CONTENT</h2>
+          <p class="team-card__desc">The words, ideas, and stories that give AAVEG its voice, before the event and long after it ends.</p>
+          <span class="team-card__more label">READ MORE <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+
+      <a class="team-card reveal" href="design.html" aria-label="Design — read more">
+        <div class="photo"><img src="images/teams/design/design-team.jpg" alt="The Design team posing in two rows outdoors at night" style="object-position:50% 20%" loading="lazy"></div>
+        <span class="team-card__no label">03 — DESIGN</span>
+        <div class="team-card__panel">
+          <h2 class="team-card__name display">DESIGN</h2>
+          <p class="team-card__desc">Turning ideas into visuals. From the first rough sketch to the details everyone remembers.</p>
+          <span class="team-card__more label">READ MORE <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+
+      <a class="team-card reveal" style="--d:.08s" href="photography.html" aria-label="Photography — read more">
+        <div class="photo"><img src="images/teams/photography/photography-team.jpg" alt="The Photography team in matching Kulture jerseys and lanyards" loading="lazy"></div>
+        <span class="team-card__no label">04 — PHOTOGRAPHY</span>
+        <div class="team-card__panel">
+          <h2 class="team-card__name display">PHOTOGRAPHY</h2>
+          <p class="team-card__desc">Finding the moments worth keeping. Documenting the people, the chaos, and everything in between.</p>
+          <span class="team-card__more label">READ MORE <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+    </div>
+
+    <footer class="teams__foot label label--grey">
+      <span>AAVEG ARCHIVE / ISSUE Nº 01 / INDUCTIONS 2026</span>
+      <button type="button" id="to-intro-foot" class="btn-back label">↑ BACK TO INTRO</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

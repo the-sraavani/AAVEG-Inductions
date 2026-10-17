@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design — AAVEG Inductions 2026</title>
+  <meta name="description" content="Design gives AAVEG a visual language. Posters, graphics, digital assets, and campaign visuals all contribute to how the fest looks and feels.">
+  <meta name="theme-color" content="#F2EFE7">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preload" href="fonts/Anton-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-team="design">
+  <a class="skip-link" href="#about">Skip to about the team</a>
+
+  <!-- Top bar. BACK returns to the team selection screen (see script.js, section 7). -->
+  <header class="team-top">
+    <div class="topbar label">
+      <a class="brand" href="index.html#teams">AAVEG / INDUCTIONS</a>
+      <a id="back-btn" class="btn-back label" href="index.html#teams">← BACK</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO =================
+         Edit the tagline here. The hero image lives in images/teams/design/ -->
+    <section class="hero" aria-labelledby="team-name">
+      <div class="hero__meta label">
+        <span class="label--orange">TEAM 03 / 04</span>
+        <span>INDUCTIONS / 2026</span>
+      </div>
+      <h1 id="team-name" class="hero__name display" data-fit>DESIGN</h1>
+      <div class="hero__img reveal">
+        <div class="photo"><img src="images/teams/design/design-team.jpg" alt="The Design team posing in two rows outdoors at night" style="object-position:50% 5%" width="1600" height="1000" loading="eager"></div>
+        <span class="credit label">FIG. 03 — DESIGN</span>
+      </div>
+      <div class="hero__tag reveal">
+        <p>MAKING IDEAS <span>VISIBLE.</span></p>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT THE TEAM ================= -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="about__title reveal">
+        <h2 id="about-title" class="display">ABOUT <span>THE TEAM</span></h2>
+      </div>
+      <div class="about__body reveal">
+        <p>Design gives AAVEG a visual language. Posters, graphics, digital assets, and campaign visuals all contribute to how the fest looks and feels.</p>
+        <p>The team takes ideas from rough beginnings to finished visuals, experimenting with composition, colour, typography, and form.</p>
+      </div>
+      <dl class="about__facts label reveal">
+        <div><dt>TEAM</dt><dd>03 / 04</dd></div>
+        <div><dt>OPEN TO</dt><dd>FIRST YEARS</dd></div>
+        <div><dt>CYCLE</dt><dd>INDUCTIONS 2026</dd></div>
+      </dl>
+    </section>
+
+    <!-- ================= APPLY =================
+         The href below is the team's application form.
+         To switch the button off at any time, add data-apply="off" to the <a>.
+         (A link that still contains example.com is also disabled automatically; see script.js, section 8.) -->
+    <section class="apply" aria-labelledby="apply-title">
+      <div class="apply__eyebrow label">
+        <span class="label--orange">APPLY / DESIGN</span>
+        <span class="label--grey">TEAM 03 / 04</span>
+      </div>
+      <h2 id="apply-title" class="display">THINK YOU'D <span>FIT HERE?</span></h2>
+      <p class="apply__support">TAKE A CLOSER LOOK. THEN MAKE IT YOURS.</p>
+      <div class="apply__action">
+        <a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdKiEva4b9TFEOwBEJ0-oK0x3Wu7aAO88FLGqhHBUr1jb6GKA/viewform">APPLY TO DESIGN <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="apply__status label" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="page-foot">
+    <div class="page-foot__inner label">
+      <span>AAVEG ARCHIVE / ISSUE Nº 01 / INDUCTIONS 2026</span>
+      <nav aria-label="Other teams">
+        <a href="operations.html">01 OPERATIONS</a>
+        <a href="content.html">02 CONTENT</a>
+        <a href="photography.html">04 PHOTOGRAPHY</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
